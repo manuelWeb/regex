@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <title>HTML</title>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  var motif = document.body.innerHTML;
+  // var result = /%22(.*)%22/.exec(motif); // %22http://tempslpreprod.as44099.com/Upload/ZonesLibres/65b7744c-a69e-42b7-958e-4369872156a8/FR/bg.jpg%22
+  var result = /%22[^%22$]*/.exec(motif);
+  console.log(result[0])
+
+})
+</script>
+</head>
+
+<body>
+"http://tempslpreprod.as44090.com/fr/url(%22http://tempslpreprod.as44099.com/Upload/ZonesLibres/65b7744c-a69e-42b7-958e-4369872156a8/FR/bg.jpg%22)"
+</body>
+</html>
